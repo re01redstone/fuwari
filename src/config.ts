@@ -45,8 +45,8 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
-			name: "GitHub",
-			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
+			name: "NekkoOJ",
+			url: "http://www.nekko.cn:1234/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
         {
@@ -63,16 +63,11 @@ export const profileConfig: ProfileConfig = {
 	bio: "Hello world!",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+			name: "Bilibili",
+			icon: "fa6-brands:bilibili", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
-		},
-		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			url: "https://space.bilibili.com/1993961540",
 		},
 		{
 			name: "GitHub",
