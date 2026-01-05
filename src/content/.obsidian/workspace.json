@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b88d97a71991f23f",
+        "id": "dc7c36fbb70fc9f9",
         "type": "tabs",
         "children": [
           {
-            "id": "6479ef0cb1c79d5d",
+            "id": "dbd944db82dc8b6e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,8 +179,10 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "6479ef0cb1c79d5d",
+  "active": "dbd944db82dc8b6e",
   "lastOpenFiles": [
+    "posts/如何在Terminal中使用代理.md",
+    "assets/images/截屏2026-01-05 13.08.24.png",
     "spec/About.md",
     "posts/关于此博客.md",
     "assets/images/Createcraft 1.jpg",
