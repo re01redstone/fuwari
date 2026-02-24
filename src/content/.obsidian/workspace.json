@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "72b9c22808d0a515",
+        "id": "a9820c13fd80250f",
         "type": "tabs",
         "children": [
           {
-            "id": "c509455d4dcab39d",
+            "id": "656b48d8766fe6e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/各种组网方式盘点.md",
+                "file": "posts/如何使用Manim制作数学动画.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "各种组网方式盘点"
+              "title": "如何使用Manim制作数学动画"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 269.5
   },
   "right": {
     "id": "11fb75c5ce34b1c3",
@@ -182,11 +182,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c509455d4dcab39d",
+  "active": "656b48d8766fe6e5",
   "lastOpenFiles": [
-    "posts/如何在Terminal中使用代理.md",
     "posts/各种组网方式盘点.md",
+    "posts/如何使用Manim制作数学动画.md",
     "pgy.oray.com.md",
+    "posts/如何在Terminal中使用代理.md",
     "assets/images/截屏2026-01-05 13.08.24.png",
     "spec/About.md",
     "posts/关于此博客.md",
