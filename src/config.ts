@@ -51,7 +51,7 @@ export const navBarConfig: NavBarConfig = {
 		},
         {
             name: "Acofork's blog",
-            url: "acofork.com",
+            url: "https://2x.nz/",
             external: true,
         }
 	],
