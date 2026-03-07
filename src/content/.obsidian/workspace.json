@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "794b472923c65b29",
+        "id": "a5eb94501bc8965b",
         "type": "tabs",
         "children": [
           {
-            "id": "3ffbd690738d6c5b",
+            "id": "76b5c48c57560555",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/并查集.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "并查集"
+              "title": "新标签页"
             }
           }
         ]
@@ -182,8 +178,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3ffbd690738d6c5b",
+  "active": "76b5c48c57560555",
   "lastOpenFiles": [
+    "posts/最小生成树.md",
+    "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
+    "posts/Minecraft服务器性能异常的解决经验.md",
+    "posts/如何在Terminal中使用代理.md",
+    "posts/如何使用Manim制作数学动画.md",
+    "posts/各种组网方式盘点.md",
+    "posts/并查集.md",
     "posts/下载资源时的一些小技巧.md",
     "assets/images/截屏2026-03-03 21.28.43.png",
     "assets/images/截屏2026-03-03 21.26.02.png",
@@ -194,12 +197,7 @@
     "assets/images/截屏2026-02-28 21.52.14.png",
     "assets/images/截屏2026-02-28 21.48.39.png",
     "assets/images/截屏2026-02-28 21.31.46.png",
-    "posts/Minecraft服务器性能异常的解决经验.md",
     "assets/images/f375081f45f83576310cc7781b754223.png",
-    "posts/如何在Terminal中使用代理.md",
-    "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
-    "posts/如何使用Manim制作数学动画.md",
-    "posts/各种组网方式盘点.md",
     "pgy.oray.com.md",
     "spec/About.md",
     "posts/关于此博客.md",

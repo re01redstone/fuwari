@@ -2,5 +2,5 @@
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "attachmentFolderPath": "assets/images",
-  "vimMode": false
+  "vimMode": true
 }
