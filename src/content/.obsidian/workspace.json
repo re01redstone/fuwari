@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a5eb94501bc8965b",
+        "id": "2314fbdea3ebf67c",
         "type": "tabs",
         "children": [
           {
-            "id": "76b5c48c57560555",
+            "id": "7463d155cf15bfa5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -178,16 +178,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "76b5c48c57560555",
+  "active": "7463d155cf15bfa5",
   "lastOpenFiles": [
-    "posts/最小生成树.md",
-    "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
-    "posts/Minecraft服务器性能异常的解决经验.md",
-    "posts/如何在Terminal中使用代理.md",
-    "posts/如何使用Manim制作数学动画.md",
-    "posts/各种组网方式盘点.md",
-    "posts/并查集.md",
+    "posts/我的个人服务器折腾之路.md",
     "posts/下载资源时的一些小技巧.md",
+    "posts/最小生成树.md",
+    "posts/Minecraft服务器性能异常的解决经验.md",
+    "posts/如何使用Manim制作数学动画.md",
+    "posts/并查集.md",
+    "posts/各种组网方式盘点.md",
+    "posts/如何在Terminal中使用代理.md",
+    "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
+    "assets/images/截屏2026-03-21 23.58.24.png",
     "assets/images/截屏2026-03-03 21.28.43.png",
     "assets/images/截屏2026-03-03 21.26.02.png",
     "assets/images/截屏2026-03-02 11.03.16.png",
@@ -197,7 +199,6 @@
     "assets/images/截屏2026-02-28 21.52.14.png",
     "assets/images/截屏2026-02-28 21.48.39.png",
     "assets/images/截屏2026-02-28 21.31.46.png",
-    "assets/images/f375081f45f83576310cc7781b754223.png",
     "pgy.oray.com.md",
     "spec/About.md",
     "posts/关于此博客.md",
