@@ -6,4 +6,4 @@
 
 ### 关于作者
 一名初三OIer,有一个十几个人个Minecraft服务器.这里贴一个服务器的QQ群~~(还有这个码怎么这么大)~~ (没事了我后来调好了.)
-![393](../assets/images/Createcraft%201.jpg)
+<img src="../assets/images/Createcraft%201.jpg" width="350">
