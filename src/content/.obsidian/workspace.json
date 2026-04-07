@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "404f87825b159722",
+        "id": "1446537a5accfd7a",
         "type": "tabs",
         "children": [
           {
-            "id": "42b97da89b84d1df",
+            "id": "c677b9afba3ed958",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/我与科学上网的那些事儿.md",
+                "file": "posts/各种组网方式盘点.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "我与科学上网的那些事儿"
+              "title": "各种组网方式盘点"
             }
           }
         ]
@@ -182,20 +182,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "42b97da89b84d1df",
+  "active": "c677b9afba3ed958",
   "lastOpenFiles": [
-    "posts/下载资源时的一些小技巧.md",
-    "posts/各种组网方式盘点.md",
-    "posts/我的个人服务器折腾之路.md",
-    "posts/如何在Terminal中使用代理.md",
     "posts/如何使用Manim制作数学动画.md",
     "posts/关于我HackCS老师拿AI做的网站的这档事.md",
-    "posts/并查集.md",
-    "posts/我与科学上网的那些事儿.md",
-    "spec/About.md",
+    "posts/各种组网方式盘点.md",
+    "posts/如何在Terminal中使用代理.md",
+    "posts/下载资源时的一些小技巧.md",
     "posts/最小生成树.md",
     "posts/Minecraft服务器性能异常的解决经验.md",
+    "posts/我与科学上网的那些事儿.md",
+    "posts/我的个人服务器折腾之路.md",
+    "我的个人服务器折腾之路.md/近期.md",
+    "我的个人服务器折腾之路.md",
+    "posts/并查集.md",
     "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
+    "spec/About.md",
     "assets/images/e5d2cc911d1428dbc507811046b5fe18.png",
     "assets/images/0c21e61ebf3bfcabc1818d7370ff562e.png",
     "assets/images/截屏2026-03-29 16.21.51.png",
