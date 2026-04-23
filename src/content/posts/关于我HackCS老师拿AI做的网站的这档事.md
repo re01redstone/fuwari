@@ -188,6 +188,58 @@ function showAlpaca(message, duration = 1000){
 ![](../assets/images/e5d2cc911d1428dbc507811046b5fe18.png)
 也是非常的nice啊.
 
+# 后传
+此篇写于网站被Hack之后的几周.
+## 网站更新
+后来他又出了个做简答题(FRQ)的功能, 那对应的, 教师端肯定也开放了FRQ相关的接口.
+
+接下来的事就很简单了:
+1. 把新的`app.js`和`index.html`下下来
+2. 把原来`/api/exams/all`的接口换成`/api/student/exams`
+但是这里AI其实还改了一部分代码, 除了获取考试列表以显示的那次调用, 在"获取学生成绩"和"查看成绩"的这两个地方也调用了, 所以得一并换了.
+
+所以我就想着封装一下, 写了个方法:
+```javascript
+let STUDENT_NAME="name";// 方便在console改学生名字
+// change the /exams/all api to /student/exam
+async function getExamsByStudent(){// 因为网络请求是异步的, 所以此方法也得是异步
+  let exams = await api("GET", "/api/student/exams",{student_name:STUDENT_NAME});// 因为这个是异步的
+  let exams2=[];
+  for(let i=0;i<exams.length;i++){// 处理数据,为什么要处理见上文
+        exams2.push(exams[i].exam);
+    }
+  return exams2;
+}
+```
+由于这个方法是异步的, 所以调用的时候也得加下await.
+
+总之现在也可以看FRQ了, 所有人的答案都是可以看的(能不能批我不知道).
+## 小游戏
+最近他又拿AI做了个双人对打版的植物大战僵尸, 长这样, 挺诡异的:
+![](../assets/images/97ba5dbc94726c477bd3e82d0a781803.jpg)
+那我自然是想Hack一下的~~话说这能叫Hack吗~~
+
+那AI依旧也是不讲记性, 所有逻辑都放到了前端, 也是没有听进去我说的**前端零信任**好吧.
+
+不过稍微有点不一样的是他把主逻辑写到`index.html`里了, 所以我还是找了一会的~~虽然最后是拿Claude找的, 不得不说, Claude真好用~~
+
+但是找到了其实你也不能调, 因为整个游戏是一个**嵌套函数**, 所有逻辑代码都在一个`startGameEngine`方法里.
+
+不能调那咱就别调了呗, 所以就直接改代码, 找到里面有个叫`applyHit`的方法用来造成伤害, 直接改成:
+```javascript
+function applyHit(def,dmg,kbVx,kbVy){
+    if(iAmP1){// 如果自己是P1
+        p2.hp=0;// 把P2生命变成0
+        if(p2.hp<=0)endGame();
+    }else{// 反之同理
+        p1.hp=0;
+        if(p1.hp<=0)endGame();
+    }
+}
+```
+其实我一开始还绕了下弯子, 还把这段script从`index.html`里分离出来了, 然后发现这是个嵌套函数没法调, 然后想办法把它放到全局作用域里, 最后反应过来可以直接改代码.
+
+不过这样要写插件的话就没啥办法了估计, 或者说script改完也会重新加载? 反正我也就自己玩玩.
 # 结语
 有关Hack这个项目的所有东西都已经开源到了[Github](https://github.com/re01redstone/HackSimon)上了. 这个项目~~或许称不上是项目~~是[我](https://github.com/re01redstone)与[ZGWest566](https://github.com/ZGWest566)共同维护的, 当然也仅供娱乐.
 

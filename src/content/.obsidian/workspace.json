@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1446537a5accfd7a",
+        "id": "0ac4ffd7853a4a70",
         "type": "tabs",
         "children": [
           {
-            "id": "c677b9afba3ed958",
+            "id": "a339f919df779cc1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/我与科学上网的那些事儿.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "我与科学上网的那些事儿"
+              "title": "新标签页"
             }
           }
         ]
@@ -182,20 +178,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c677b9afba3ed958",
+  "active": "a339f919df779cc1",
   "lastOpenFiles": [
-    "posts/我的个人服务器折腾之路.md",
-    "posts/如何使用Manim制作数学动画.md",
-    "posts/如何在Terminal中使用代理.md",
-    "posts/各种组网方式盘点.md",
     "posts/关于我HackCS老师拿AI做的网站的这档事.md",
+    "assets/images/97ba5dbc94726c477bd3e82d0a781803.jpg",
+    "posts/各种组网方式盘点.md",
+    "posts/并查集.md",
+    "posts/如何使用Manim制作数学动画.md",
     "posts/下载资源时的一些小技巧.md",
+    "posts/我与科学上网的那些事儿.md",
+    "posts/我的个人服务器折腾之路.md",
+    "posts/如何在Terminal中使用代理.md",
     "posts/最小生成树.md",
     "posts/Minecraft服务器性能异常的解决经验.md",
-    "posts/我与科学上网的那些事儿.md",
     "我的个人服务器折腾之路.md/近期.md",
     "我的个人服务器折腾之路.md",
-    "posts/并查集.md",
     "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
     "spec/About.md",
     "assets/images/e5d2cc911d1428dbc507811046b5fe18.png",
@@ -208,7 +205,6 @@
     "assets/images/截屏2026-03-02 11.03.16.png",
     "assets/images/截屏2026-03-02 11.02.05.png",
     "assets/images/截屏2026-02-28 22.36.36.png",
-    "assets/images/截屏2026-02-28 22.14.10.png",
     "pgy.oray.com.md",
     "posts/关于此博客.md",
     "assets/images",
