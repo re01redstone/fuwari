@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0ac4ffd7853a4a70",
+        "id": "21ad2dc2f1fb72e4",
         "type": "tabs",
         "children": [
           {
-            "id": "a339f919df779cc1",
+            "id": "2e459ab3608d65ae",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -178,17 +178,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a339f919df779cc1",
+  "active": "2e459ab3608d65ae",
   "lastOpenFiles": [
+    "posts/虚假的https与真正的SaaS优选.md",
+    "assets/images/截屏2026-05-01 21.05.47.png",
+    "posts/我的个人服务器折腾之路.md",
+    "posts/我与科学上网的那些事儿.md",
+    "posts/如何在Terminal中使用代理.md",
+    "posts/如何使用Manim制作数学动画.md",
     "posts/关于我HackCS老师拿AI做的网站的这档事.md",
     "assets/images/97ba5dbc94726c477bd3e82d0a781803.jpg",
     "posts/各种组网方式盘点.md",
     "posts/并查集.md",
-    "posts/如何使用Manim制作数学动画.md",
     "posts/下载资源时的一些小技巧.md",
-    "posts/我与科学上网的那些事儿.md",
-    "posts/我的个人服务器折腾之路.md",
-    "posts/如何在Terminal中使用代理.md",
     "posts/最小生成树.md",
     "posts/Minecraft服务器性能异常的解决经验.md",
     "我的个人服务器折腾之路.md/近期.md",
@@ -204,7 +206,6 @@
     "assets/images/截屏2026-03-03 21.26.02.png",
     "assets/images/截屏2026-03-02 11.03.16.png",
     "assets/images/截屏2026-03-02 11.02.05.png",
-    "assets/images/截屏2026-02-28 22.36.36.png",
     "pgy.oray.com.md",
     "posts/关于此博客.md",
     "assets/images",
