@@ -44,16 +44,16 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+        {
+            name:"友链",
+            url: "/links",
+            external: false,
+        },
 		{
 			name: "NekkoOJ",
 			url: "http://www.nekko.cn:1234/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
-		},
-        {
-            name: "Acofork's blog",
-            url: "https://2x.nz/",
-            external: true,
-        }
+		}
 	],
 };
 
