@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e65d543e04c5749d",
+        "id": "dadf24b45fda3105",
         "type": "tabs",
         "children": [
           {
-            "id": "bc76018de640a383",
+            "id": "f9f8c0e417203049",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/下载资源时的一些小技巧.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "下载资源时的一些小技巧"
+              "title": "新标签页"
             }
           }
         ]
@@ -182,25 +178,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bc76018de640a383",
+  "active": "f9f8c0e417203049",
   "lastOpenFiles": [
-    "assets/images/截屏2026-06-06 20.54.26.png",
-    "posts/我的个人服务器折腾之路.md",
-    "posts/我与科学上网的那些事儿.md",
-    "posts/下载资源时的一些小技巧.md",
-    "posts/虚假的https与真正的SaaS优选.md",
-    "posts/最小生成树.md",
-    "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
     "posts/Minecraft服务器性能异常的解决经验.md",
+    "posts/最小生成树.md",
+    "posts/虚假的https与真正的SaaS优选.md",
+    "posts/我与科学上网的那些事儿.md",
+    "posts/我的个人服务器折腾之路.md",
     "posts/如何在Terminal中使用代理.md",
     "posts/如何使用Manim制作数学动画.md",
+    "posts/关于我HackCS老师拿AI做的网站的这档事.md",
     "posts/各种组网方式盘点.md",
+    "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
+    "posts/下载资源时的一些小技巧.md",
+    "assets/images/截屏2026-06-06 20.54.26.png",
     "posts/并查集.md",
     "spec/Links.md",
     "spec/About.md",
     "2x.nz.md",
     "assets/images/截屏2026-05-01 21.05.47.png",
-    "posts/关于我HackCS老师拿AI做的网站的这档事.md",
     "assets/images/97ba5dbc94726c477bd3e82d0a781803.jpg",
     "我的个人服务器折腾之路.md/近期.md",
     "我的个人服务器折腾之路.md",
@@ -212,7 +208,6 @@
     "assets/images/截屏2026-03-03 21.28.43.png",
     "assets/images/截屏2026-03-03 21.26.02.png",
     "assets/images/截屏2026-03-02 11.03.16.png",
-    "assets/images/截屏2026-03-02 11.02.05.png",
     "pgy.oray.com.md",
     "posts/关于此博客.md",
     "assets/images",
