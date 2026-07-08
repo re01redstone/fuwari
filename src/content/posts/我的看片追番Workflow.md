@@ -1,5 +1,5 @@
 ---
-title: OpenList, qBittorrent&PeerBanHelper的部署
+title: 我的看片追番Workflow
 published: 2026-02-24
 description: OpenList, qBittorrent, PBL与MPV
 image: ""
@@ -96,18 +96,15 @@ apt install qbittorrent-nox //下载
 像其他我装的一些插件有:
 - [memo](https://github.com/po5/memo): 观看历史
 - [thumbfast](https://github.com/po5/thumbfast): 缩略图
+- [uosc_danmaku](https://github.com/Tony15246/uosc_danmaku): 弹幕
 其他插件也可以在[MPV Wiki](https://github.com/mpv-player/mpv/wiki/User-Scripts)或者[awesome-mpv][https://github.com/stax76/awesome-mpv]上找
 ### 配置
-mpv的主配置文件在`~/.config/mpv`(Mac上是这个), Github上有[示例文件](https://github.com/mpv-player/mpv/blob/master/etc/mpv.conf)
-```
-vo=gpu-next
-gpu-api=vulkan
-hwdec=auto
-vulkan-async-compute=yes
-vulkan-async-transfer=yes
-vulkan-queue-count=1
-vd-lavc-dr=yes
-```
-像这样就可以把图形API改成vulcan, 然后`osc=no`就可以把默认的UI关掉.
+mpv的主配置文件在`~/.config/mpv`(Mac上是这个), Github上有[示例文件](https://github.com/mpv-player/mpv/blob/master/etc/mpv.conf)或[大佬的中文版](https://github.com/dyphire/mpv-config/blob/master/mpv.conf).
+
+`gpu-api=vulkan`像这样就可以把图形API改成vulcan, 然后`osc=no`就可以把默认的UI关掉.
+
+按键映射是`input.conf` 语法是`<按键> <动作>`也是参考[大佬的配置文件](https://github.com/dyphire/mpv-config/blob/master/input.conf)
+
+然后也是有现成的[大佬的配置文件](https://github.com/088uiop/mpv.lite_config/blob/main/mpv.conf)可以抄作业.
 ## 结语
 总之, 现在你可以用你的qBittorrent下片Openlist管理MPV看片, 实现非常丝滑, 非常高清还免费的看片体验了, 另外, 如果你要看番, 我知道的是有[nyaa.si](https://nyaa.si)这个种子站.
