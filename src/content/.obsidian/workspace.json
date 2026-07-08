@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dadf24b45fda3105",
+        "id": "c1f48773c7ceb356",
         "type": "tabs",
         "children": [
           {
-            "id": "f9f8c0e417203049",
+            "id": "de2711c1e07dd82d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -178,8 +178,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f9f8c0e417203049",
+  "active": "de2711c1e07dd82d",
   "lastOpenFiles": [
+    "posts/我的看片追番Workflow.md",
     "posts/Minecraft服务器性能异常的解决经验.md",
     "posts/最小生成树.md",
     "posts/虚假的https与真正的SaaS优选.md",
@@ -189,7 +190,6 @@
     "posts/如何使用Manim制作数学动画.md",
     "posts/关于我HackCS老师拿AI做的网站的这档事.md",
     "posts/各种组网方式盘点.md",
-    "posts/OpenList, qBittorrent&PeerBanHelper的部署.md",
     "posts/下载资源时的一些小技巧.md",
     "assets/images/截屏2026-06-06 20.54.26.png",
     "posts/并查集.md",

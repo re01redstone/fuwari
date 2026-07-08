@@ -1,17 +1,20 @@
 ---
 title: OpenList, qBittorrent&PeerBanHelper的部署
 published: 2026-02-24
-description: 最近部署的一些小项目
+description: OpenList, qBittorrent, PBL与MPV
 image: ""
 tags: []
 category: ""
 draft: false
 lang: ""
 ---
+>原标题: OpenList, qBittorrent&PeerBanHelper的部署
 ## 前言
 起因就是了解到BT下载这个东西, 然后觉得挺方便的, 然后正好有一台服务器, 而且还有闲置资源, 就想搭一个玩玩.
 
 正好服务器也缺一个文件管理系统, 就顺便把Openlist也部署了, 其实也有一部分原因是因为想把电脑手机里的一部分文件迁移走.
+
+另外, 也想要搭建一个丝滑的追番worflow, 如标题所说.
 
 ## OpenList
 OpenList就是Alist被卖之后继承Alist的"社区版", 其实一开始我还不知道Alist被卖了, 还好最后查文档的时候看到相关视频了, 要不然就数据裸奔了. ~~数据在哪~~ 
@@ -79,5 +82,32 @@ apt install qbittorrent-nox //下载
 就是这个东西, 你的Endpoint是填这个, 然后你填完之后要让它check一下, 其他没了.
 
 之后你就可以看到它在给你封一堆Ip了:)
+## MPV
+[MPV](https://mpv.io/)是世界上最好用的视频播放器, 但是对想要开箱即用的人就不太适用了.
+
+在[这里](https://mpv.io/installation/)下载安装包就可以了, 可以看到有很多构建的版本, 没啥特殊需求直接下Github CI的就行, 点进去之后下对应架构和系统版本就行.
+
+下载之后你会看到一个非常简陋的播放窗口, 你可能会想: *就这?* 事实上, MPV是一个拥有非常强大扩展性的开源软件, 所以你下的这个只不过是和Linux Kernal一样的核心而已. 如果想要现代化的UI的话可以下mpv.net或者往mpv里面加插件, 那么其中一个UI 界面就是USOC.
+### 插件
+以USOC, 也就是那个UI界面举例, 参照Github上的一键安装命令安装就行: 
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/unix.sh)"
+```
+像其他我装的一些插件有:
+- [memo](https://github.com/po5/memo): 观看历史
+- [thumbfast](https://github.com/po5/thumbfast): 缩略图
+其他插件也可以在[MPV Wiki](https://github.com/mpv-player/mpv/wiki/User-Scripts)或者[awesome-mpv][https://github.com/stax76/awesome-mpv]上找
+### 配置
+mpv的主配置文件在`~/.config/mpv`(Mac上是这个), Github上有[示例文件](https://github.com/mpv-player/mpv/blob/master/etc/mpv.conf)
+```
+vo=gpu-next
+gpu-api=vulkan
+hwdec=auto
+vulkan-async-compute=yes
+vulkan-async-transfer=yes
+vulkan-queue-count=1
+vd-lavc-dr=yes
+```
+像这样就可以把图形API改成vulcan, 然后`osc=no`就可以把默认的UI关掉.
 ## 结语
-总之, 现在你可以用你的qBittorrent下片Openlist看片, 实现非常丝滑, 非常高清还免费的看片体验了, 另外, 如果你要看番, 我知道的是有[nyaa.si](https://nyaa.si)这个种子站.
+总之, 现在你可以用你的qBittorrent下片Openlist管理MPV看片, 实现非常丝滑, 非常高清还免费的看片体验了, 另外, 如果你要看番, 我知道的是有[nyaa.si](https://nyaa.si)这个种子站.
