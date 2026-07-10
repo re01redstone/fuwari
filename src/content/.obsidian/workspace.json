@@ -11,10 +11,14 @@
             "id": "6d314b25f0b521d9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "posts/deal-with-NAT.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "deal-with-NAT"
             }
           }
         ]
@@ -180,19 +184,19 @@
   },
   "active": "6d314b25f0b521d9",
   "lastOpenFiles": [
-    "posts/我的看片追番Workflow.md",
-    "posts/Minecraft服务器性能异常的解决经验.md",
-    "posts/最小生成树.md",
-    "posts/虚假的https与真正的SaaS优选.md",
-    "posts/我与科学上网的那些事儿.md",
-    "posts/我的个人服务器折腾之路.md",
-    "posts/如何在Terminal中使用代理.md",
-    "posts/如何使用Manim制作数学动画.md",
-    "posts/关于我HackCS老师拿AI做的网站的这档事.md",
-    "posts/各种组网方式盘点.md",
-    "posts/下载资源时的一些小技巧.md",
+    "posts/stupid-simon.md",
+    "posts/deal-with-NAT.md",
+    "posts/better-watching-experience.md",
+    "posts/manim-animation.md",
+    "posts/proxy-in-terminal.md",
+    "posts/my-server.md",
+    "posts/VPN-and-GFW.md",
+    "posts/download-method.md",
+    "posts/problem-with-minecraft.md",
+    "posts/https-and-saas.md",
+    "posts/minimum-spanning-tree.md",
+    "posts/disjoint-set.md",
     "assets/images/截屏2026-06-06 20.54.26.png",
-    "posts/并查集.md",
     "spec/Links.md",
     "spec/About.md",
     "2x.nz.md",
