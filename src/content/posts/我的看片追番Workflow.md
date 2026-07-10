@@ -1,7 +1,7 @@
 ---
 title: 我的看片追番Workflow
 published: 2026-02-24
-description: OpenList, qBittorrent, PBL与MPV
+description: 这应该叫Workflow吗?
 image: ""
 tags: []
 category: ""
@@ -106,5 +106,40 @@ mpv的主配置文件在`~/.config/mpv`(Mac上是这个), Github上有[示例文
 按键映射是`input.conf` 语法是`<按键> <动作>`也是参考[大佬的配置文件](https://github.com/dyphire/mpv-config/blob/master/input.conf)
 
 然后也是有现成的[大佬的配置文件](https://github.com/088uiop/mpv.lite_config/blob/main/mpv.conf)可以抄作业.
+
+顺便挂个[中文版文档](https://hooke007.github.io/index.html), mpv其实还有着色器这种提升画面质量的东西, 各位可以自己研究研究.
+### 关于在MacOS上如何play with mpv
+首先去下一个[mpv-handler](https://github.com/akiirui/mpv-handler), 这个是一个用rust写的通过`mpv-handler://`协议实现调用mpv的小玩意, 但是别下我上面那个链接的, 因为你会发现没有MacOS上的release. 是的, 你需要自己编译.
+
+在[未合并的分支版本](https://github.com/dirichy/mpv-handler)里可以通过`cargo build`来编译MacOS版本的mpv-handler, README下面有说具体怎么搞的, 跟着搞就行.
+
+搞完之后你会发现打不开, 因为在作为应用的时候mpv-handler无法得知mpv的路径. 需要去mpv-handler的config里面设置下, 也就是在`/Users/guoyuxuan/Library/Application\ Support/mpv-handler/config.toml`这里(没有文件自己创建下).
+
+写入以下内容:
+```toml
+# 写入mpv可执行文件的路径, 如果不在这就自己替换
+mpv = "/Applications/mpv.app/Contents/MacOS/mpv"
+# yt-dlp的路径, 可加可不加, 这个是homebrew下的就在这
+ytdl = "/opt/homebrew/bin/yt-dlp"
+```
+
+现在应该就可以通过mpv-handler协议通过mpv打开一个流媒体了.
+
+但是还不够方便, 你的目的是实现点一下就打开, 更何况这个协议还得把原始链接编码成base64.
+
+所以借用下[External Player](https://greasyfork.org/zh-CN/scripts/518677-external-player), 只下这个油猴脚本就行.
+
+然后新建一个Player, icon把MPV那个复制下来填上(你要填其他的我也不拦你), Play Event填以下内容:
+```javascript
+// url转成base64
+let data = btoa(window.location.href);
+let safe = data.replace(/\//g, "_").replace(/\+/g, "-").replace(/\=/g, "");
+
+console.log(`mpv-handler://play/${safe}`)
+window.open(`mpv-handler://play/${safe}`, '_self');//启动!!
+```
+
+然后就可以随便open with mpv任何yt-dlp支持的视频平台啦.
+
 ## 结语
 总之, 现在你可以用你的qBittorrent下片Openlist管理MPV看片, 实现非常丝滑, 非常高清还免费的看片体验了, 另外, 如果你要看番, 我知道的是有[nyaa.si](https://nyaa.si)这个种子站.
