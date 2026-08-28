@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "61e199da07b4028a",
+        "id": "d97f8d88bc2745fd",
         "type": "tabs",
         "children": [
           {
-            "id": "f74e92a6b20e89fe",
+            "id": "4d46d1111aeae3a0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -178,7 +178,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f74e92a6b20e89fe",
+  "active": "4d46d1111aeae3a0",
   "lastOpenFiles": [
     "posts/repair-server.md",
     "assets/images/5c02708f64082de2db679365c5588658.jpg",
