@@ -1,10 +1,23 @@
 ---
+import { getSortedPosts } from "@utils/content-utils";
+import { render } from "astro:content";
 import { Icon } from "astro-icon/components";
 import { profileConfig } from "../../config";
 import { url } from "../../utils/url-utils";
 import ImageWrapper from "../misc/ImageWrapper.astro";
 
 const config = profileConfig;
+
+// 字数计算 source: https://github.com/afoim/fuwari/blob/main/src/components/widget/Profile.astro
+const posts = await getSortedPosts();
+const totalPosts = posts.length;
+let totalWords = 0;
+for (const post of posts) {
+	const { remarkPluginFrontmatter } = await render(post);
+	if (remarkPluginFrontmatter?.words) {
+		totalWords += remarkPluginFrontmatter.words;
+    }
+}
 ---
 <div class="card-base p-3">
     <a aria-label="Go to About Page" href={url('/about/')}
@@ -33,6 +46,25 @@ const config = profileConfig;
                 <Icon name={config.links[0].icon} class="text-[1.5rem]"></Icon>
                 {config.links[0].name}
             </a>}
+        </div>
+        <!-- 全站文章与字数统计 source: https://github.com/afoim/fuwari/blob/main/src/components/widget/Profile.astro -->
+        <div class="grid grid-cols-2 mt-3 pt-3 border-t border-neutral-700">
+            <div class="text-center">
+                <div class="text-xs text-neutral-500 mb-1 flex items-center justify-center gap-1">
+                    <Icon name="material-symbols:article-outline" class="text-base"></Icon>
+                    <span class="text-xs">文章数</span>
+                </div>
+                <div class="font-bold text-lg text-neutral-300">{totalPosts}</div>
+            </div>
+            <div class="text-center border-l border-neutral-700">
+                <div class="text-xs text-neutral-500 mb-1 flex items-center justify-center gap-1">
+                    <Icon name="material-symbols:format-list-numbered" class="text-base"></Icon>
+                    <span class="text-xs">总字数</span>
+                </div>
+                <div class="font-bold text-lg text-neutral-300">
+                    {(totalWords / 10000).toFixed(1)}w
+                </div>
+            </div>
         </div>
     </div>
 </div>
