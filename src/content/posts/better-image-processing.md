@@ -68,4 +68,4 @@ magick ./raw.png -fuzz 60% -transparent black output.png
 - `magick img1.png img2.png -append output.png` 纵向拼接
 ### 隐写术解密
 - `magick input.png -level 0%,30% output.png` 光棱坦克黑底显形, 调整色阶显示范围0-30
-- `magick input.png -level 70%,100% output.png` 光棱坦克白底显形, 调整色阶显示范围70-100
+	- `magick input.png -level 70%,100% output.png` 光棱坦克白底显形, 调整色阶显示范围70-100
