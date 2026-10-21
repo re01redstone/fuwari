@@ -320,5 +320,5 @@ OK啊, 也是成功使用vim写了一个文件了, 其实到此为止已经实�
 施工中... 接下来要写这些:
 - 解压缩 grep 包管理 sudo
 - | > &&
-- opencode git vim/终端美化
+- opencode git vim/终端美化 alias systemd
 
